@@ -151,7 +151,7 @@ async def main() -> bool:
 
             console.log(f"{msg.OK}Text converted successfully")
             logger.info('Text converted successfully')
-
+            console.log(req_text)
             await tts(req_text, outfile=filename, voice=args.tts, random_voice=args.random_voice, args=args)
 
             console.log(

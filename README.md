@@ -118,12 +118,25 @@ python main.py --non_english --tts de-DE-KillianNeural
 
 ```bash
 python main.py --url https://www.youtube.com/watch?v=dQw4w9WgXcQ --tts en-US-JennyNeural
+
+
+python main.py --url https://www.youtube.com/watch?v=X7ZFuQS7rP0 --tts zh-CN-XiaoyiNeural
+
+
 ```
 
 - Generate a TikTok video with a random TTS voice:
 
 ```bash
 python main.py --random_voice --gender Male --language en-US
+
+python main.py --url https://www.youtube.com/watch?v=X7ZFuQS7rP0  --random_voice --gender Male --language zh-CN
+
+
+subtitles_translator -i NEW_INVENTIONS_THAT_WILL_SURPRISE_YOU-[X7ZFuQS7rP0].mp4 -o translated_video.mp4 -s en -t zh
+
+subtitles_translator -i NEW_INVENTIONS_THAT_WILL_SURPRISE_YOU-[X7ZFuQS7rP0].srt -o translated.srt -s en -t zh
+
 ```
 
 - List all available voices:
@@ -149,6 +162,10 @@ We welcome contributions from the community! Please see our [Contributing Guidel
 ## OpenAI Whisper Forum Discussion
 
 - <https://github.com/openai/whisper/discussions/223>
+
+whisper NEW_INVENTIONS_THAT_WILL_SURPRISE_YOU-[X7ZFuQS7rP0].mp4 --language Chinese --task translate
+
+
 
 ## Acknowledgments
 

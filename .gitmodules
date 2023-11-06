@@ -1,0 +1,3 @@
+[submodule "code/SubtitleTranslate"]
+	path = code/SubtitleTranslate
+	url = https://github.com/mepeichun/SubtitleTranslate.git
